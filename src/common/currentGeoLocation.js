@@ -1,10 +1,12 @@
 import weatherApi from './weatherApi';
 import updateTempToDom from '../components/cityInfo';
+import metricDefinitor from '../components/farenCelsius';
 
 const geoLocation = async (key) => {
-  const temp = [];
   navigator.geolocation.getCurrentPosition(async (data) => {
-    const currentTemperature = await weatherApi.getWeatherGeo(data.coords.latitude, data.coords.longitude, key);
+    const temp = metricDefinitor.farenCelsius.celsius;
+    const metric = temp === true ? 'metric' : 'imperial';
+    const currentTemperature = await weatherApi.getWeatherGeo(data.coords.latitude, data.coords.longitude, key, metric);
     const { main, name, weather } = currentTemperature;
     updateTempToDom.cityInfo(name, main.temp, main.feels_like, main.temp_min, main.temp_max, weather[0].main, weather[0].description);
   });

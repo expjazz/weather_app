@@ -6,5 +6,4 @@ const pageOne = () => {
   searchForm.addEventListener('submit', helpers.searchTemperature);
 };
 
-
 export default { pageOne };
