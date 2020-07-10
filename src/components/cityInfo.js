@@ -1,5 +1,7 @@
+import elements from '../common/elements';
 
 const cityInfo = (city, temperature, main, description, max, min, feelsLike) => {
+  const { mainContainer } = elements.get();
   const container = document.createElement('div');
   container.classList = 'mx-auto bg-blue-100 bg-opacity-75 max-w-sm rounded overflow-hidden shadow-lg';
 
@@ -34,4 +36,7 @@ const cityInfo = (city, temperature, main, description, max, min, feelsLike) => 
 </div>
 
 `;
+  mainContainer.appendChild(container);
 };
+
+export default { cityInfo };
