@@ -2,7 +2,8 @@ import elements from '../common/elements';
 
 const cityInfo = (city, temperature, main, description, max, min, feelsLike) => {
   const { mainContainer } = elements.get();
-  const container = document.createElement('div');
+  const container = document.getElementById('addWeatherToDom') || document.createElement('div');
+  container.id = 'addWeatherToDom';
   container.classList = 'mx-auto bg-blue-100 bg-opacity-75 max-w-sm rounded overflow-hidden shadow-lg';
 
   container.innerHTML = `
