@@ -1,5 +1,4 @@
 import weatherApi from './weatherApi';
-import updateTempToDom from '../components/cityInfo';
 import metricDefinitor from '../components/farenCelsius';
 
 const geoLocation = async (key) => {
