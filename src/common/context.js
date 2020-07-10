@@ -3,8 +3,7 @@ import geoData from './currentGeoLocation';
 
 
 const searchWeatherGeo = async () => {
-  const temperature = await geoData.geoLocation('586beec31912ba88b366b0309c325c56');
-  return temperature;
+  geoData.geoLocation('586beec31912ba88b366b0309c325c56');
 };
 
 const searchWeatherCity = async (city) => {

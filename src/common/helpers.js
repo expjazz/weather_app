@@ -7,6 +7,8 @@ const searchTemperature = async (e) => {
   console.log('object');
   const currentTemperature = await context.searchWeatherCity(citySearch.value);
   console.log(currentTemperature);
+  appendToDom(()=>{})
+  
   console.log(currentTemperature.main);
   console.log(currentTemperature.name);
   console.log(currentTemperature.main.temp);

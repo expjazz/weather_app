@@ -45,6 +45,7 @@ const generator = () => {
   </div>
 </div>
   `;
+  console.log('pgnOne');
   eventListeners.pageOne();
 };
 
