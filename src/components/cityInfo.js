@@ -1,5 +1,6 @@
 import elements from '../common/elements';
 import metric from './farenCelsius';
+import tempToggler from '../common/celsiusToFarToggler';
 
 const cityInfo = (city, temperature, main, description, max, min, feelsLike) => {
   const { mainContainer } = elements.get();
@@ -14,9 +15,9 @@ const cityInfo = (city, temperature, main, description, max, min, feelsLike) => 
     <div class="text-center">
     <div class="font-bold text-xl mb-2">${city}</div>
     <p class="temperature text-3xl">${temperature} ${metric.farenCelsius.celsius === true ? '°C' : '°F'}</p>
-    <div class="subtitlecont">
-      <button class="w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded ${metric.farenCelsius.celsius === true ? 'bg-purple-400' : 'bg-purple-800'}">Farenheit</button>
-      <button class="bg-red-700 w-1/4 hover:bg-red-900 text-white font-bold py-2 px-4 rounded ${metric.farenCelsius.celsius === true ? 'bg-purple-800' : 'bg-purple-400'}">Celsius</button>
+    <div class="tempToggler">
+      <button class="w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded ${metric.farenCelsius.celsius === true ? 'bg-purple-400' : 'bg-purple-800'}" id='imperial'>Farenheit</button>
+      <button class="bg-red-700 w-1/4 hover:bg-red-900 text-white font-bold py-2 px-4 rounded ${metric.farenCelsius.celsius === true ? 'bg-purple-800' : 'bg-purple-400'}" id='metric'>Celsius</button>
     </div>
     <ul>
       <li>Main: ${main}</li>
@@ -40,6 +41,7 @@ const cityInfo = (city, temperature, main, description, max, min, feelsLike) => 
 
 `;
   mainContainer.appendChild(container);
+  Array.from(document.querySelector('.tempToggler').children).forEach((btn) => btn.addEventListener('click', tempToggler.celsiusToFaren));
 };
 
 export default { cityInfo };

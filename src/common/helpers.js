@@ -13,4 +13,5 @@ const searchTemperature = async (e) => {
   updateTempToDom.cityInfo(name, main.temp, main.feels_like, main.temp_min, main.temp_max, weather[0].main, weather[0].description);
 };
 
+
 export default { searchTemperature };
