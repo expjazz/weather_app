@@ -1,4 +1,9 @@
 import './styles.scss';
-import test from './main';
+import run from './main';
+import app from './app';
 
-test.test();
+console.log('a');
+app.app();
+run.run();
+
+console.log('b');

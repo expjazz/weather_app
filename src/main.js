@@ -1,14 +1,9 @@
-import weatherApi from './common/weatherApi';
-import geoData from './common/currentGeoLocation';
+import context from './common/context';
 
-const test = async () => {
-  // const data = await weatherApi.getWeatherCity('london', '586beec31912ba88b366b0309c325c56');
-  // const position = navigator.geolocation.getCurrentPosition((datas) => datas);
-  // console.log(position);
-  geoData.geoLocation('586beec31912ba88b366b0309c325c56');
-  // console.log(currentLocation);
-  // const temp = await weatherApi.getWeatherGeo(datas.coords.latitude, datas.coords.longitude, '586beec31912ba88b366b0309c325c56');
+const run = async () => {
+  context.searchWeatherGeo();
+  const a = await context.searchWeatherCity('london');
+  console.log(a);
+  console.log('test');
 };
-
-
-export default { test };
+export default { run };
