@@ -16,7 +16,7 @@ const defineBg = (main) => {
       mainContainer.classList = 'thunderBg';
       break;
     default:
-      console.log('default');
+      mainContainer.classList = '';
   }
 };
 

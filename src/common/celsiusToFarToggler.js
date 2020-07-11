@@ -10,7 +10,9 @@ const celsiusToFaren = async (e) => {
   }
   const currentTemperature = await context.searchWeatherCity(city.farenCelsius.currentCity);
   const { main, name, weather } = currentTemperature;
-  updateTempToDom.searchCityDom(name, main.temp, weather[0].main, weather[0].description, main.temp_max, main.temp_min, main.feels_like);
+  updateTempToDom.searchCityDom(name,
+    main.temp, weather[0].main, weather[0].description,
+    main.temp_max, main.temp_min, main.feels_like);
 };
 
 export default { celsiusToFaren };

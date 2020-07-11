@@ -4,7 +4,8 @@ import bg from './defineBg';
 
 const searchCityDom = (city, temperature, main, description, max, min, feelsLike) => {
   const {
-    cityField, tempField, mainField, descField, maxField, minField, feelsLikeField, celsiusBtn, farenBtn,
+    cityField, tempField, mainField, descField,
+    maxField, minField, feelsLikeField, celsiusBtn, farenBtn,
   } = elements.get();
   const { celsius } = metric.farenCelsius;
   cityField.innerText = city;

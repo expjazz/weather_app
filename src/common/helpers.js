@@ -18,7 +18,8 @@ const searchTemperature = async (e) => {
   }
   metricDefinitor.farenCelsius.currentCity = citySearch.value;
   const { main, name, weather } = currentTemperature;
-  updateTempToDom.searchCityDom(name, main.temp, weather[0].main, weather[0].description, main.temp_max, main.temp_min, main.feels_like);
+  updateTempToDom.searchCityDom(name, main.temp, weather[0].main,
+    weather[0].description, main.temp_max, main.temp_min, main.feels_like);
   loadingTag.classList.add('opacity-0');
 };
 
