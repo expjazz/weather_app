@@ -1,23 +1,26 @@
-# Project Restaurant Page - Javascript 
+# Project Weather App - Javascript
 
-This website was build to try out the ES-6 module features, in which I built three different pages that are generated via Javascript,  and each page is a different module. The project also has a fluid dropdown menu and a dark mode that persists the change of pages. I also generated the content from an external API called 'The Meal DB' using asynchronous javascript (await / async).
+This website was built to try out some external API's together with asynchronous programming. When you first open, it asks you to track your location. If you accept, will show the weather in the place you are. If not, will open a search form where you can search for the weather.
 
 ### Screenshots
-- ![Main page](./screenshot1.png)
+
+- ![Main page](./screenshot.png)
 
 ### FEATURES
-Dark mode, fluid dropdown, and a fluid content coming from an external API.
 
+Fluid background (depending on the weather), weather API and geolocation API.
 
 ### BUILT WITH
+
 - HTML
 - CSS
 - Javascript
 - Webpacker
+- Tailwind
 
 ### LIVE VERSION
-- [GitHack](https://raw.githack.com/expjazz/restaurant_page_JS/feature_V1/dist/index.html)
 
+- [GitHack](https://raw.githack.com/expjazz/restaurant_page_JS/feature_V1/dist/index.html)
 
 ### Getting Started
 
@@ -29,17 +32,19 @@ Dark mode, fluid dropdown, and a fluid content coming from an external API.
 ### AUTHORS
 
 👤Expedito Andrade
+
 - Github: [@githubexpjazz](https://github.com/expjazz)
 - Twitter: [@expjazz](https://twitter.com/expeditoandrade13)
 - Linkedin: [Expedito Andrade](https://www.linkedin.com/in/expedito-andrade/)
 - Portfolio: [Expedito Andrade](https://expjazz.github.io/expedito_andrade/)
 
 ### Show your support
+
 Give a star if you like this project!
 
 ### Acknowledgments
-- Microverse
 
+- Microverse
 
 ### 🤝 Contributing
 
@@ -53,10 +58,10 @@ Contributions, issues and feature requests are welcome! Start by:
 - Push your branch up to your forked repository
 - Open a Pull Request with a detailed description to the development branch of the original project for a review
 
-
-
 ### Show your support
+
 Give a ⭐️ if you like this project!
 
 ### 📝 License
+
 This project is MIT licensed
