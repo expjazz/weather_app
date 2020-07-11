@@ -1,5 +1,6 @@
 import elements from '../common/elements';
 import metric from './farenCelsius';
+import bg from './defineBg';
 
 const searchCityDom = (city, temperature, main, description, max, min, feelsLike) => {
   const {
@@ -12,6 +13,7 @@ const searchCityDom = (city, temperature, main, description, max, min, feelsLike
   descField.innerText = description;
   maxField.innerText = max;
   minField.innerText = min;
+  bg.defineBg(main);
   feelsLikeField.innerText = feelsLike;
   if (celsius) {
     celsiusBtn.classList = 'w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded bg-purple-800';
