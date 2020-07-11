@@ -1,6 +1,6 @@
 # Project Weather App - Javascript
 
-This website was built to try out some external API's together with asynchronous programming. When you first open, it asks you to track your location. If you accept, will show the weather in the place you are. If not, will open a search form where you can search for the weather.
+This website was built to try out some external API's together with asynchronous programming. When you first open, it asks you to track your location. If you accept, will show the weather in the place you are. If not, will open a search form where you can search for the weather in a city you desire.
 
 ### Screenshots
 
@@ -16,18 +16,19 @@ Fluid background (depending on the weather), weather API and geolocation API.
 - CSS
 - Javascript
 - Webpacker
-- Tailwind
+- TailwindCSS
 
 ### LIVE VERSION
 
-- [GitHack](https://raw.githack.com/expjazz/restaurant_page_JS/feature_V1/dist/index.html)
+- [GitHack](https://raw.githack.com/expjazz/weather_app/featureV1/dist/index.html)
 
 ### Getting Started
 
 - Clone the project to your local machine;
 - `cd` into the project directory;
 - Run `npm install` to install the necessary modules;
-- Run `npm start`, the page will automatically load on [localhost:8080](localhost:8080).
+- To check in development mode, run `npm start`, the page will automatically load on [localhost:8080](localhost:8080).
+- To see in procution mode, run `npm run build`, open the `dist` folder and finally the `index.html`.
 
 ### AUTHORS
 
