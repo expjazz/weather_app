@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#content {
+  transition: all 0.8s linear;
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.defaultBg {
+  background: url("./assets/main.jpg");
+}
+
+.cloudBg {
+  background: url("./assets/clouds.jpg");
+}
+
+.clearBg {
+  background: url("./assets/clear.jpg");
+}
+
+.rainBg {
+  background: url("./assets/rain.jpg");
+}
+
+.thunderBg {
+  background: url("./assets/thunder.jpg");
+}
+
+.loading {
+  transition: all 0.8s;
+}
