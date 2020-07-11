@@ -5,9 +5,31 @@
 @import "tailwindcss/utilities";
 
 #content {
-  background: url('https://images.unsplash.com/photo-1593444470909-72b01f1ea83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  transition: all 0.8s linear;
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
 
+.defaultBg {
+  background: url('https://images.unsplash.com/photo-1593444470909-72b01f1ea83e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+
+
+}
+
+.cloudBg {
+  background: url('https://images.unsplash.com/photo-1484199316358-d7acb93729f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80');
+
+}
+
+.clearBg {
+  background: url('https://images.unsplash.com/photo-1514423140760-4479e12ca0cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+}
+
+.rainBg {
+  background: url('https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.thunderBg {
+  background: url('https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }

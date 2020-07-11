@@ -3,6 +3,7 @@ import eventListeners from '../common/eventListeners';
 
 const generator = () => {
   const { mainContainer } = elements.get();
+  mainContainer.classList.add('defaultBg');
   mainContainer.innerHTML = `
   <div class="mx-auto  pt-16 w-full max-w-xs">
   <form class="bg-white bg-blue-100 bg-opacity-75 shadow-md rounded px-8 pt-6 pb-8 mb-4" id="searchForm">

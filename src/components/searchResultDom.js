@@ -9,12 +9,12 @@ const searchCityDom = (city, temperature, main, description, max, min, feelsLike
   const { celsius } = metric.farenCelsius;
   cityField.innerText = city;
   tempField.innerText = `${temperature} ${celsius === true ? '°C' : '°F'}`;
-  mainField.innerText = main;
-  descField.innerText = description;
-  maxField.innerText = max;
-  minField.innerText = min;
+  mainField.innerText = `Main: ${main}`;
+  descField.innerText = `Description: ${description}`;
+  maxField.innerText = `Max: ${max}`;
+  minField.innerText = `Min: ${min}`;
   bg.defineBg(main);
-  feelsLikeField.innerText = feelsLike;
+  feelsLikeField.innerText = `Feels Like: ${feelsLike}`;
   if (celsius) {
     celsiusBtn.classList = 'w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded bg-purple-800';
     farenBtn.classList = 'w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded bg-purple-400';
