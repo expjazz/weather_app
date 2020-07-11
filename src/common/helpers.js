@@ -12,6 +12,7 @@ const searchTemperature = async (e) => {
 
   const currentTemperature = await context.searchWeatherCity(citySearch.value);
   if (currentTemperature.message) {
+    loadingTag.classList.add('opacity-0');
     alert('City Not Found');
     return;
   }

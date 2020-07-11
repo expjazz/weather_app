@@ -1,12 +1,10 @@
 import currentGeo from './common/currentGeoLocation';
+import generator from './components/cityInfo';
 
 const run = async () => {
-  try {
-    currentGeo.geoLocation();
-  } catch (e) {
-    console.error(e);
-  } finally {
-    console.log('a');
+  // currentGeo.geoLocation();
+  if (!document.getElementById('addWeatherToDom')) {
+    generator.cityInfo('', '', '', '', '', '', '');
   }
 };
 export default { run };
