@@ -11,6 +11,7 @@ const get = () => ({
   feelsLikeField: document.getElementById('feelsLike'),
   celsiusBtn: document.getElementById('metric'),
   farenBtn: document.getElementById('imperial'),
+  loadingTag: document.querySelector('.loading'),
 });
 
 export default { get };
