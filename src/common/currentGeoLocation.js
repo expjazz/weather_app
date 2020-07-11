@@ -6,6 +6,7 @@ import elements from './elements';
 const geoLocation = async (key = '586beec31912ba88b366b0309c325c56') => {
   navigator.geolocation.getCurrentPosition(async (data) => {
     const { loadingTag } = elements.get();
+    loadingTag.classList.remove('opacity-0');
     const temp = metricDefinitor.farenCelsius.celsius;
     const metric = temp === true ? 'metric' : 'imperial';
     const currentTemperature = await weatherApi.getWeatherGeo(data.coords.latitude,
