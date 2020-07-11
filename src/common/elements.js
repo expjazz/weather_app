@@ -9,6 +9,8 @@ const get = () => ({
   maxField: document.getElementById('max'),
   minField: document.getElementById('min'),
   feelsLikeField: document.getElementById('feelsLike'),
+  celsiusBtn: document.getElementById('metric'),
+  farenBtn: document.getElementById('imperial'),
 });
 
 export default { get };
