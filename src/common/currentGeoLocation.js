@@ -1,7 +1,9 @@
 import weatherApi from './weatherApi';
 import metricDefinitor from '../components/farenCelsius';
+import updateTempToDom from '../components/cityInfo';
 
-const geoLocation = async (key) => {
+
+const geoLocation = async (key = '586beec31912ba88b366b0309c325c56') => {
   navigator.geolocation.getCurrentPosition(async (data) => {
     const temp = metricDefinitor.farenCelsius.celsius;
     const metric = temp === true ? 'metric' : 'imperial';

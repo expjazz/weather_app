@@ -1,6 +1,6 @@
-import context from './common/context';
+import currentGeo from './common/currentGeoLocation';
 
 const run = async () => {
-  context.searchWeatherGeo();
+  currentGeo.geoLocation();
 };
 export default { run };

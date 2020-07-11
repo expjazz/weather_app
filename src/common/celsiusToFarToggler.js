@@ -1,6 +1,6 @@
 import city from '../components/farenCelsius';
 import context from './context';
-import updateTempToDom from '../components/cityInfo';
+import updateTempToDom from '../components/searchResultDom';
 
 const celsiusToFaren = async (e) => {
   if (e.target.id === 'metric') {
@@ -10,7 +10,7 @@ const celsiusToFaren = async (e) => {
   }
   const currentTemperature = await context.searchWeatherCity(city.farenCelsius.currentCity);
   const { main, name, weather } = currentTemperature;
-  updateTempToDom.cityInfo(name, main.temp, main.feels_like, main.temp_min, main.temp_max, weather[0].main, weather[0].description);
+  updateTempToDom.searchCityDom(name, main.temp, main.feels_like, main.temp_min, main.temp_max, weather[0].main, weather[0].description);
 };
 
 export default { celsiusToFaren };
