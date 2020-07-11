@@ -4,19 +4,19 @@ const defineBg = (main) => {
   const { mainContainer } = elements.get();
   switch (main) {
     case 'Clouds':
-      mainContainer.classList = 'cloudBg';
+      mainContainer.classList = 'cloudBg h-full';
       break;
     case 'Clear':
-      mainContainer.classList = 'clearBg';
+      mainContainer.classList = 'clearBg h-full';
       break;
     case 'Rain':
-      mainContainer.classList = 'rainBg';
+      mainContainer.classList = 'rainBg h-full';
       break;
     case 'Thunderstorm':
-      mainContainer.classList = 'thunderBg';
+      mainContainer.classList = 'thunderBg h-full';
       break;
     default:
-      mainContainer.classList = '';
+      mainContainer.classList = 'cloudBg h-full';
   }
 };
 
