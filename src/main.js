@@ -1,6 +1,12 @@
 import currentGeo from './common/currentGeoLocation';
 
 const run = async () => {
-  currentGeo.geoLocation();
+  try {
+    currentGeo.geoLocation();
+  } catch (e) {
+    console.error(e);
+  } finally {
+    console.log('a');
+  }
 };
 export default { run };
