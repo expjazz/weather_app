@@ -20,6 +20,7 @@ const searchCityDom = (city, temperature, main, description, max, min, feelsLike
     celsiusBtn.classList = 'w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded bg-purple-400';
     farenBtn.classList = 'w-1/4 hover:bg-red-900 px-1 text-white font-bold py-2 rounded bg-purple-800';
   }
+  localStorage.setItem('farenCelsius', JSON.stringify(metric.farenCelsius));
 };
 
 export default { searchCityDom };
